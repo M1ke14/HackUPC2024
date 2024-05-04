@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+   tools:context=".RegisterActivity"
+    android:background="@drawable/background"
+    >
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -17,7 +19,7 @@
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Registration"
         android:gravity="center"
         android:textSize="25sp"
         android:layout_marginTop="20sp"
@@ -46,15 +48,66 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingEnd="150dp" />
-    <TextView
-        android:layout_marginTop="15sp"
+    <LinearLayout
+        android:id="@+id/personality"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
         android:layout_below="@id/password"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Personality"
+        android:inputType="textPassword"
+        android:layout_marginStart="50dp"
+        android:paddingEnd="150dp"
+        />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20sp"
+            android:layout_width="20sp"
+            android:layout_marginBottom="8sp"
+            android:layout_height="20sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/phrase"
+        android:layout_below="@id/personality"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Don't have an Account? Register"
+        android:onClick="openLink"
+        android:text="You don't know your personality? Click here"/>
+
+
+
+    <EditText
+        android:id="@+id/hobbies"
+        android:layout_marginTop="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personality"
+        android:hint="Hobbies"
+        android:inputType="textPassword"
+        android:layout_marginStart="50dp"
+        android:paddingEnd="150dp"
         />
-
-
+    <androidx.appcompat.widget.AppCompatButton
+        android:elevation="8dp"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hobbies"
+        android:text="Sign Up"
+        android:textSize="12sp"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="60sp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/rounded_button"
+        />
 
 </RelativeLayout>
