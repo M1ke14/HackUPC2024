@@ -46,14 +46,14 @@
         android:layout_marginStart="50dp"
         android:paddingEnd="150dp"
         />
-        <TextView
-            android:layout_marginTop="15sp"
-            android:layout_below="@id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Don't have an Account? Register"
-            />
+    <TextView
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Don't have an Account? Register"
+        />
 
 
 
