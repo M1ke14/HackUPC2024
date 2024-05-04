@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -26,26 +27,26 @@
 
     <EditText
         android:id="@+id/Username"
-        android:layout_marginTop="80sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/login"
-        android:hint="Username"
         android:layout_marginStart="50dp"
-        android:paddingEnd="150dp"
-        />
+        android:layout_marginTop="80sp"
+        android:hint="Username"
+        android:minHeight="48dp"
+        android:paddingEnd="150dp" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_marginTop="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/Username"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30sp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:layout_marginStart="50dp"
-        android:paddingEnd="150dp"
-        />
+        android:minHeight="48dp"
+        android:paddingEnd="150dp" />
         <TextView
             android:layout_marginTop="15sp"
             android:layout_below="@id/password"

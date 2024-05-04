@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionairActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/DestinationQuestion"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Where are you traveling?"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/DestinationQuestion"
+        android:id="@+id/Destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Place"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/Destination"
+        android:id="@+id/ArrivingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Arriving date"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="true"
+        android:minHeight="48dp"
+
+        />
+
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/ArrivingDate"
+        android:id="@+id/ArrivingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Arriving time"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="true"
+        android:minHeight="48dp"
+        />
+
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/ArrivingTime"
+        android:id="@+id/LeavingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Leaving date"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="true"
+        android:minHeight="48dp"
+
+        />
+
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/LeavingDate"
+        android:id="@+id/LeavingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="LeavingTime"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="true"
+        android:minHeight="48dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="323dp"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:layout_below="@id/LeavingTime"
+        />
+</RelativeLayout>
