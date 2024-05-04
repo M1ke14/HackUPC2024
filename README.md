@@ -6,12 +6,14 @@ Travel Buddy is an Android application developed in Android Studio that helps so
 
 ## Table of Contents
 
-#about
-#features
-#getting-started
-    - #prerequisites
-    - #installation
-#usage
+1. [About](#about)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ## About
 
