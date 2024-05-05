@@ -110,4 +110,14 @@
         android:background="@drawable/rounded_button"
         />
 
+    <TextView
+        android:id="@+id/goback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:text="Have you already an account? Sign in"
+        android:gravity="center"
+        android:layout_marginTop="15sp"
+        />
+
 </RelativeLayout>

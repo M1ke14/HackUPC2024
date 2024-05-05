@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapActivity"
-    android:background="@drawable/background">
+    tools:context=".MapActivity">
 
-    <TextView
-        android:id="@+id/chooseEventQuestion"
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/affinity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose an event"
+
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:textSize="24sp"/>
+        android:layout_marginTop="630dp"
+        android:text="Show the Affinity List"
+        android:background="@drawable/rounded_button"
+        android:paddingHorizontal="60dp"
+        />
 </RelativeLayout>

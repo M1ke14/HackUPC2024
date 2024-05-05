@@ -8,6 +8,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.travelbuddy.databinding.ActivityMainBinding;
 
@@ -21,8 +22,17 @@ public class MatchingListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.matchinglist);
 
+
+        AppCompatButton map = findViewById(R.id.map);
+        map.setOnClickListener(v -> {
+
+
+            Intent intent = new Intent(MatchingListActivity.this, MapActivity.class);
+            startActivity(intent);
+            finish();
+        });
         int[] imageId = {R.drawable.img};
 
         String[] name = {"testUser"};
@@ -35,23 +45,13 @@ public class MatchingListActivity extends AppCompatActivity {
 
         ArrayList<UserInListActivity> userInListActivityArrayList = new ArrayList<>();
 
-        for(int i = 0; i < imageId.length;i++){
+        for(int i = 0; i < 6;i++){
 
-            UserInListActivity user = new UserInListActivity(name[i], origin[i], personality[i], contact[i], imageId[1]);
+            UserInListActivity user = new UserInListActivity(name[0], origin[0], personality[0], contact[0], imageId[0]);
             userInListActivityArrayList.add(user);
 
         }
 
-        ListAdapter listAdapter = new ListAdapter(MatchingListActivity.this, userInListActivityArrayList);
-        binding.list
-        RelativeLayout user = findViewById(R.id.user);
-        user.setClickable(true);
-        user.setOnClickListener(v -> {
-
-            Intent i = new Intent(MatchingListActivity.this, UserInListActivity.class);
-            i.putExtra("name", name[position]);
-
-        });
 
     }
 

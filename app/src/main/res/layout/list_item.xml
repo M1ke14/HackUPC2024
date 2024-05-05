@@ -35,7 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/userName"
-                    android:text="User"
+                    android:text="John Doe"
                     android:textColor="@color/black"
                     android:textSize="26sp"
                     android:textStyle="bold"/>
@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/origin"
-                    android:text="country"
+                    android:text="United States"
                     android:textSize="10sp"
                     />
 
@@ -52,13 +52,22 @@
 
 
         </LinearLayout>
-
+<LinearLayout
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/personality"
             android:padding="15dp"
             android:layout_alignParentRight="true"
-            android:text="personality"/>
+            android:text="95% Affinity       INFP"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobbies: Sport, Cinema"
+            /></LinearLayout>
     </RelativeLayout>
 </LinearLayout>
